@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'GalanoGrotesque-Bold';
+    src:        
+        url('GalanoGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GalanoGrotesque-Heavy';
+    src:
+        url('GalanoGrotesque-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque-SemiBold';
+    src: 
+        url('GalanoGrotesque-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GalanoGrotesque-Medium';
+    src: 
+        url('GalanoGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: 
+        url('GalanoGrotesqueAlt-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+

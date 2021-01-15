@@ -12,15 +12,24 @@
     "test": "jest"
   },
   "dependencies": {
+    "@mdi/font": "^5.7.55",
     "@nuxt/content": "^1.5.0",
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.14.0"
+    "bootstrap": "^4.5.2",
+    "hooper": "^0.3.4",
+    "nuxt": "^2.14.0",
+    "vue-form-wizard": "^0.8.4",
+    "vue-numeric-input": "^1.0.6",
+    "vue-tel-input": "^4.4.1",
+    "vuetify": "^2.3.10",
+    "vuetify-loader": "^1.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/tailwindcss": "^2.1.0",
+    "@nuxtjs/vuetify": "^1.11.2",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
@@ -31,6 +40,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "vue-loader": "^15.9.3"
   }
 }

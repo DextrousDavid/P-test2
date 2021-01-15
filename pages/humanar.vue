@@ -89,8 +89,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/crm.svg"
-                                  alt="crm icon"
+                                  src="~assets/humanarApps/organization-and-people.svg"
+                                  alt="organization-and-people icon"
                                 />
                               </v-list-item-avatar>
 
@@ -98,7 +98,7 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                CRM
+                                Organization and People
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
@@ -139,6 +139,7 @@
                           </v-card>
                         </div>
                       </v-col>
+
                       <v-col cols="12" sm="6" md="6" lg="6">
                         <div>
                           <v-card
@@ -151,8 +152,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/purchase.svg"
-                                  alt="purchase icon"
+                                  src="~assets/humanarApps/payroll.svg"
+                                  alt="payroll icon"
                                 />
                               </v-list-item-avatar>
 
@@ -160,7 +161,7 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                Purchase
+                                Payroll (PAYE and Pension)
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
@@ -214,8 +215,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/sales.svg"
-                                  alt="sales icon"
+                                  src="~assets/humanarApps/benefits.svg"
+                                  alt="benefits icon"
                                 />
                               </v-list-item-avatar>
 
@@ -223,7 +224,7 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                Sales
+                                Benefits
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
@@ -276,8 +277,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/inventory.svg"
-                                  alt="inventory icon"
+                                  src="~assets/humanarApps/performance-management.svg"
+                                  alt="performance-management icon"
                                 />
                               </v-list-item-avatar>
 
@@ -285,7 +286,7 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                Inventory
+                                Performance Management
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
@@ -339,8 +340,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/analytics.svg"
-                                  alt="analytics icon"
+                                  src="~assets/humanarApps/payments.svg"
+                                  alt="payments icon"
                                 />
                               </v-list-item-avatar>
 
@@ -348,7 +349,7 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                Analytics
+                                Payments
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
@@ -402,8 +403,8 @@
                             <v-list-item three-line>
                               <v-list-item-avatar tile size="50">
                                 <img
-                                  src="~assets/optimaApps/payments.svg"
-                                  alt="payments icon"
+                                  src="~assets/humanarApps/analytics.svg"
+                                  alt="analytics icon"
                                 />
                               </v-list-item-avatar>
 
@@ -411,7 +412,70 @@
                                 style="margin-top: -10px"
                                 class="text-capitalize black--text"
                               >
-                                Payments
+                                Analytics
+                                <!-- <v-list-item-subtitle
+                                style="margin-top: -30px; font-size: 13px"
+                                class="black--text"
+                                >₦{{ crm.toLocaleString() }} /
+                                Month</v-list-item-subtitle
+                              > -->
+                              </v-list-item-content>
+
+                              <v-list-item-content>
+                                <no-ssr>
+                                  <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
+                                  <vue-numeric-input
+                                    v-model="paymentsValue"
+                                    :min="1"
+                                    :max="30"
+                                    :step="1"
+                                  ></vue-numeric-input>
+                                </no-ssr>
+                                <div style="margin-left: 25px; font-size: 13px">
+                                  No. of Users
+                                </div>
+                              </v-list-item-content>
+                            </v-list-item>
+                            <div class="ml-5 mt-4">
+                              <span class="font-semibold">NGN 4,999</span>/ User
+                              /Monthly
+                              <span class="ml-5 border border-solid"
+                                >Monthly</span
+                              >
+                            </div>
+                            <div class="ml-5">
+                              <span class="font-semibold"> NGN 3,999</span>/
+                              User /Monthly
+                              <span class="ml-5 border border-solid"
+                                >Annually</span
+                              >
+                            </div>
+                          </v-card>
+                        </div>
+                      </v-col>
+
+                      <v-col cols="12" sm="6" md="6" lg="6">
+                        <div>
+                          <v-card
+                            max-width="90%"
+                            height="200"
+                            flat
+                            color="light"
+                          >
+                            <!-- @click="append('640')" -->
+                            <v-list-item three-line>
+                              <v-list-item-avatar tile size="50">
+                                <img
+                                  src="~assets/humanarApps/employee.svg"
+                                  alt="employee self service icon"
+                                />
+                              </v-list-item-avatar>
+
+                              <v-list-item-content
+                                style="margin-top: -10px"
+                                class="text-capitalize black--text"
+                              >
+                                Employee Self Service
                                 <!-- <v-list-item-subtitle
                                 style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
