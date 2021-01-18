@@ -1,7 +1,7 @@
 <template>
   <v-form ref="form" lazy-validation class="pa-0" autocomplete>
     <h2 align="left" class="create-account mb-2">Create an Account</h2>
-    <!-- Sign up component starts here -->
+    <!-- Sign up component starts here. with multisteps component-->
     <v-row>
       <v-col cols="12" md="12" sm="12" xs="12">
         <v-row>

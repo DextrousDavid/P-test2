@@ -3,7 +3,7 @@
     <no-ssr>
       <PricingTabs />
       <div>
-        <!-- <AppHeader /> -->
+        <!--<AppHeader /> -->
         <v-app class="pt-6" style="background-color: #f5f5f5 !important">
           <!-- <section class="banner">
           <div class="content-center mr-3 ml-3">

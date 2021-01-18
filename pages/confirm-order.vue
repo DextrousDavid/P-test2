@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- confirm order stepper component starts here -->
+    <!-- confirm order stepper component starts here-->
     <div id="app">
       <v-app id="inspire">
         <v-stepper v-model="e1">

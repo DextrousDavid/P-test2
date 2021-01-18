@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-app>
+      <!-- index -->
       <div class="xs:mx-2 sm:mx-2 mt-12">
         <v-expansion-panels style="z-index: 0; maxwidth: 280px" accordion hover>
           <v-expansion-panel
