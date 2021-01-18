@@ -732,12 +732,7 @@
                                     </v-btn>
                                   </div>
                                   <div class="my-2 d-flex justify-center">
-                                    <v-btn
-                                      to="/confirm-order"
-                                      class="px-15"
-                                      color="success"
-                                      dark
-                                    >
+                                    <v-btn class="px-15" color="success" dark>
                                       BUY NOW
                                     </v-btn>
                                   </div>

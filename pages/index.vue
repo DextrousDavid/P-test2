@@ -125,16 +125,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -187,16 +183,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -250,16 +242,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -312,16 +300,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -349,12 +333,6 @@
                                 class="text-capitalize black--text"
                               >
                                 Analytics
-                                <!-- <v-list-item-subtitle
-                                style="margin-top: -30px; font-size: 13px"
-                                class="black--text"
-                                >₦{{ crm.toLocaleString() }} /
-                                Month</v-list-item-subtitle
-                              > -->
                               </v-list-item-content>
 
                               <v-list-item-content>
@@ -375,16 +353,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -438,16 +412,12 @@
                             <div class="ml-5 mt-4">
                               <span class="font-semibold">NGN 4,999</span>/ User
                               /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Monthly</span
-                              >
+                              <span class="ml-5">Monthly</span>
                             </div>
                             <div class="ml-5">
                               <span class="font-semibold"> NGN 3,999</span>/
                               User /Monthly
-                              <span class="ml-5 border border-solid"
-                                >Annually</span
-                              >
+                              <span class="ml-5">Annually</span>
                             </div>
                           </v-card>
                         </div>
@@ -668,7 +638,12 @@
                                     </v-btn>
                                   </div>
                                   <div class="my-2 d-flex justify-center">
-                                    <v-btn class="px-15" color="success" dark>
+                                    <v-btn
+                                      to="/confirm-order"
+                                      class="px-15"
+                                      color="success"
+                                      dark
+                                    >
                                       BUY NOW
                                     </v-btn>
                                   </div>
@@ -1057,7 +1032,6 @@ export default {
       let appsValueMonthly = this.appsValueMonthly
       const appsValueAnnually = this.appsValueAnnually
       let valuePrice = 0
-
       const percentDisount = 0.2
       let discount = 0
 
@@ -1065,7 +1039,6 @@ export default {
         case 'crm':
           appsValueMonthly = appsValueMonthly + this.prices.crm
           this.appsValueMonthly = appsValueMonthly
-
           valuePrice = this.prices.crm
           discount = valuePrice * percentDisount
           valuePrice = valuePrice - discount
@@ -1074,7 +1047,6 @@ export default {
         case 'purchase':
           appsValueMonthly = appsValueMonthly + this.prices.purchase
           this.appsValueMonthly = appsValueMonthly
-
           valuePrice = this.prices.purchase
           discount = valuePrice * percentDisount
           valuePrice = valuePrice - discount
@@ -1083,7 +1055,6 @@ export default {
         case 'sales':
           appsValueMonthly = appsValueMonthly + this.prices.sales
           this.appsValueMonthly = appsValueMonthly
-
           valuePrice = this.prices.sales
           discount = valuePrice * percentDisount
           valuePrice = valuePrice - discount
@@ -1092,7 +1063,6 @@ export default {
         case 'inventory':
           appsValueMonthly = appsValueMonthly + this.prices.inventory
           this.appsValueMonthly = appsValueMonthly
-
           valuePrice = this.prices.inventory
           discount = valuePrice * percentDisount
           valuePrice = valuePrice - discount
@@ -1127,11 +1097,8 @@ export default {
         case 'purchase':
           appsValueMonthly = appsValueMonthly - this.prices.purchase
           this.appsValueMonthly = appsValueMonthly
-
           annualPrice = this.prices.purchase
-
           discount = annualPrice * percentDisount
-
           annualPrice = annualPrice - discount
           appsValueAnnually = appsValueAnnually - annualPrice
           this.appsValueAnnually = appsValueAnnually
@@ -1139,11 +1106,8 @@ export default {
         case 'sales':
           appsValueMonthly = appsValueMonthly - this.prices.sales
           this.appsValueMonthly = appsValueMonthly
-
           annualPrice = this.prices.sales
-
           discount = annualPrice * percentDisount
-
           annualPrice = annualPrice - discount
           appsValueAnnually = appsValueAnnually - annualPrice
           this.appsValueAnnually = appsValueAnnually
@@ -1151,11 +1115,8 @@ export default {
         case 'inventory':
           appsValueMonthly = appsValueMonthly - this.prices.inventory
           this.appsValueMonthly = appsValueMonthly
-
           annualPrice = this.prices.inventory
-
           discount = annualPrice * percentDisount
-
           annualPrice = annualPrice - discount
           appsValueAnnually = appsValueAnnually - annualPrice
           this.appsValueAnnually = appsValueAnnually
@@ -1198,17 +1159,6 @@ export default {
       this.inventory = 5499
     },
   },
-  // methods: {
-  //   eightyTimesUser() {
-  //     this.appValue = this.users * 80
-  //   },
-  // },
-
-  // data: () => ({
-  //   currentItem: 'tab-Web',
-  //   items: ['Web', 'Shopping', 'Videos', 'Images'],
-  //   more: ['News', 'Maps', 'Books', 'Flights', 'Apps'],
-  // }),
 
   head() {
     return {

@@ -32,11 +32,15 @@
             >Dome</span
           ></v-tab
         >
-        <v-tab><span style="color: #000">Product</span></v-tab>
+        <!-- <v-tab><span style="color: #000">Product</span></v-tab> -->
         <!-- <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
         <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab> -->
-        <v-tab style="background-color: #fff; color: #000">
-          <p style="font-size: 11px; font-weight: 900">
+        <v-tab style="background-color: #3d3c3b; color: #fff">
+          <img
+            class="fill-current h-6 w-6"
+            src="~assets/tabIcons/shopping-cart.svg"
+            alt="shopping-cart icon" />
+          <p style="font-size: 11px; font-weight: 900; color: #fff">
             products selected<br /><span class="total-no"> </span></p
         ></v-tab>
         <v-tab class="flex" style="background-color: #16b271; color: #fff">

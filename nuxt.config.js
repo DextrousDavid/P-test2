@@ -44,7 +44,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~plugins/vuetify.js'],
+  plugins: ['~plugins/vuetify.js', '~plugins/vue-tel-input'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
