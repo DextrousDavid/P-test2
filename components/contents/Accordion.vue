@@ -4,8 +4,8 @@
       <!-- index -->
       <div class="xs:mx-2 mt-2">
         <v-expansion-panels
-          class="ml-10"
-          style="z-index: 0; maxwidth: 500px"
+          class="ml-4"
+          style="z-index: 0; min-width: 440px"
           accordion
           hover
         >
@@ -52,7 +52,7 @@ export default {
           heading: 'Optima',
           content1: 'XXX',
           content2: 'XXX',
-          appsSelected: 'XXX',
+          appsSelected: 'Products',
         },
         {
           id: 2,
@@ -60,7 +60,7 @@ export default {
           content1: 'XXX',
           content2: 'XXX',
           content3: 'XXX',
-          appsSelected: 'XXX',
+          appsSelected: 'Products',
         },
       ],
     }

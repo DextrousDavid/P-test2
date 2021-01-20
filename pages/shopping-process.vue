@@ -85,15 +85,29 @@
                   <v-row><ConfirmOrderAccordion /></v-row>
                 </v-col>
                 <v-col cols="12" sm="12" md="5" lg="5">
-                  <v-card
-                    elevation="2"
-                    class="mx-auto pa-6 pt-9 pb-12 push-center ml-2"
-                    min-width="42vw"
-                    style=""
-                  >
-                    XXX
-                    <v-btn color="primary" to="/"> XXX </v-btn>
-                  </v-card>
+                  <v-row>
+                    <v-card
+                      elevation="2"
+                      class="mx-auto pa-4 pt-4 -mt-1 pb-8 push-center ml-2 mr-2"
+                      min-width="30vw"
+                      style=""
+                    >
+                      <ConfirmOrderCard />
+                      <div class="text-center">
+                        <v-btn color="primary" @click="e1 = 3">
+                          Proceed Checkout
+                        </v-btn>
+                      </div>
+                    </v-card>
+                    <v-card
+                      elevation="2"
+                      class="mx-auto pa-4 pt-4 mt-4 pb-8 push-center ml-2 mr-2"
+                      max-width="30vw"
+                      style=""
+                    >
+                      <SalesCondition />
+                    </v-card>
+                  </v-row>
                 </v-col>
               </v-row>
             </v-stepper-content>
@@ -105,7 +119,9 @@
                 height="200px"
               ></v-card>
 
-              <v-btn color="primary" @click="e1 = 1"> Continue </v-btn>
+              <div class="text-center">
+                <v-btn color="primary" @click="e1 = 1"> Continue </v-btn>
+              </div>
             </v-stepper-content>
           </v-stepper-items>
         </v-stepper>
@@ -118,7 +134,9 @@
 import Signup from '.././components/contents/Signup'
 import Accordion from '../components/contents/Accordion.vue'
 import ConfirmOrderAccordion from '../components/contents/ConfirmOrderAccordion.vue'
+import ConfirmOrderCard from '../components/contents/ConfirmOrderCard'
 import Password from '../components/contents/Password.vue'
+import SalesCondition from '../components/contents/SalesCondition.vue'
 import VerificationCode from '../components/contents/VerificationCode.vue'
 export default {
   components: {
@@ -127,6 +145,8 @@ export default {
     VerificationCode,
     Password,
     ConfirmOrderAccordion,
+    ConfirmOrderCard,
+    SalesCondition,
   },
   data() {
     return {

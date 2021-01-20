@@ -112,6 +112,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="crmValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -170,6 +171,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="purchaseValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -229,6 +231,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="salesValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -287,6 +290,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="inventoryValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -340,6 +344,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="analyticsValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -399,6 +404,7 @@
                                   <!-- make sure to check out the docs subsequently || JayeshLab / vue-numeric-input -->
                                   <vue-numeric-input
                                     v-model="paymentsValue"
+                                    style="width: 102px"
                                     :min="1"
                                     :max="30"
                                     :step="1"
@@ -509,25 +515,25 @@
                                     >(₦ XXX)</span
                                   >
                                 </v-card-text>
-
+                                <!-- 
                                 <v-card-text
                                   class="text-padding green lighten-4"
                                   style="color: #ff0000"
-                                >
-                                  Special Discount
-                                  <!-- <span
+                                > -->
+                                <!-- Special Discount -->
+                                <!-- <span
                                     class="float-right"
                                     style="color: #ff0000"
                                     >(₦{{
                                       specialDiscountAnnualCalculator.toLocaleString()
                                     }})</span
                                   > -->
-                                  <span
+                                <!-- <span
                                     class="float-right"
                                     style="color: #ff0000"
                                     >(₦ XXX)</span
                                   >
-                                </v-card-text>
+                                </v-card-text> -->
 
                                 <v-card-text
                                   class="text-padding grey lighten-3"
