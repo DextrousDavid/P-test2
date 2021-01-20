@@ -21,7 +21,8 @@
     "nuxt": "^2.14.0",
     "vue-form-wizard": "^0.8.4",
     "vue-numeric-input": "^1.0.6",
-    "vue-tel-input": "^4.4.1",
+    "vue-tel-input": "^5.0.2",
+    "vue-verification-code-input": "^1.0.0",
     "vuetify": "^2.3.10",
     "vuetify-loader": "^1.6.0"
   },

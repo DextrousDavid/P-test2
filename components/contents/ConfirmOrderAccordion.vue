@@ -2,7 +2,7 @@
   <div>
     <v-app style="background-color: #fafafa">
       <!-- index -->
-      <div class="xs:mx-2 mt-2">
+      <div class="mt-2">
         <v-expansion-panels
           class="ml-10"
           style="z-index: 0; maxwidth: 500px"

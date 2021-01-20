@@ -2603,11 +2603,6 @@ available-typed-arrays@^1.0.0, available-typed-arrays@^1.0.2:
   dependencies:
     array-filter "^1.0.0"
 
-awesome-phonenumber@^2.39.0:
-  version "2.43.0"
-  resolved "https://registry.yarnpkg.com/awesome-phonenumber/-/awesome-phonenumber-2.43.0.tgz#0f168760b643e91cb48c93cae679f9c022e916e7"
-  integrity sha512-UjrT0oi4k5EDUoasCT0C6HszA2qqKaG5ZCM136Akgq+oDlevR2wIcAFQFpduGjV7/GHBaWpEwiQDh3mCMlpe+g==
-
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -3783,10 +3778,10 @@ core-js@^2.4.0, core-js@^2.6.5:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-js@^3.6.4:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.2.tgz#0a1fd6709246da9ca8eff5bb0cbd15fba9ac7044"
-  integrity sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A==
+core-js@^3.3.2, core-js@^3.6.5:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.3.tgz#c21906e1f14f3689f93abcc6e26883550dd92dd0"
+  integrity sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -7278,6 +7273,11 @@ levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+libphonenumber-js@^1.9.6:
+  version "1.9.8"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.8.tgz#82f88ea473c2214667709c24220bade4b85e0752"
+  integrity sha512-gXzuhvlqdH20MlKAy1jXOVouCYByz43ZGCAeNnNuKQXUM+Wl36gbql0M27QQI3ahYCHJErd2W8ciqWweoQdbrQ==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -11717,14 +11717,14 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-tel-input@^4.4.1:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/vue-tel-input/-/vue-tel-input-4.4.2.tgz#a673f706f1e452b862908b9d7a0496df0e114a35"
-  integrity sha512-fZm9/gE2MFAe+EoF/R66t9oc0U9oI87TiPTxv6pHG8MGhrc62a+uvPqyE/clNhdEJJ0slGzVqkelBuw23HHWtw==
+vue-tel-input@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/vue-tel-input/-/vue-tel-input-5.0.2.tgz#c91f73402ede67e022819b9fa5113321b5ed2842"
+  integrity sha512-Rtg0JFcp/bgpKahGQ/tRea7uvp8Uh6PLY25iJm+lZuUZHlRpXOfxUQzlbvG5CwfcDNg89twkjg4Gsfd2TNI/Ew==
   dependencies:
-    "@babel/runtime" "^7.8.4"
-    awesome-phonenumber "^2.39.0"
-    core-js "^3.6.4"
+    core-js "^3.6.5"
+    libphonenumber-js "^1.9.6"
+    vue "^2.6.11"
 
 vue-template-compiler@^2.6.12:
   version "2.6.12"
@@ -11739,7 +11739,15 @@ vue-template-es2015-compiler@^1.6.0, vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.12:
+vue-verification-code-input@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-verification-code-input/-/vue-verification-code-input-1.0.0.tgz#41323a1b2acf61d0c35a182da126164aa86caa07"
+  integrity sha512-BY6YKCwBE+3Y3vO3/3ic0ycEabicmOTPdl9oZrLpx6PVdebVAOKCHs6s2taeHmg862AMaGWWBSnJ5z8m8dM10A==
+  dependencies:
+    core-js "^3.3.2"
+    vue "^2.6.10"
+
+vue@^2.6.10, vue@^2.6.11, vue@^2.6.12:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==

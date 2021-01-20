@@ -4,7 +4,7 @@
       <PricingTabs />
       <div>
         <!-- <AppHeader /> -->
-        <v-app class="pt-6" style="background-color: #f5f5f5 !important">
+        <v-app class="pt-6" style="background-color: #fafafa !important">
           <!-- <section class="banner">
           <div class="content-center mr-3 ml-3">
             <h1 class="banner-h1 font-bold">Cloudenly Pricing</h1>
@@ -431,7 +431,7 @@
                   <!-- tab table begins here -->
                   <v-col cols="12" sm="12" md="4" lg="4">
                     <v-app
-                      style="background-color: #f5f5f5 !important"
+                      style="background-color: #fafafa !important"
                       class="tab-table"
                     >
                       <v-card elevation="3">
@@ -473,15 +473,20 @@
                                   class="text-padding"
                                   style="color: #000; font-weight: 500"
                                 >
-                                  {{ users.toLocaleString() }}
-                                  <span style="color: #000">{{
+                                  Users
+                                  <!-- {{ users.toLocaleString() }} -->
+                                  <!-- <span style="color: #000">{{
                                     userToUsersText()
                                   }}</span
-                                  ><span class="float-right" style="color: #000"
+                                  > -->
+                                  <span class="float-right" style="color: #000"
+                                    >₦ XXX</span
+                                  >
+                                  <!-- <span class="float-right" style="color: #000"
                                     >₦{{
                                       annualTimesUser.toLocaleString()
                                     }}</span
-                                  >
+                                  > -->
                                 </v-card-text>
 
                                 <v-card-text
@@ -490,41 +495,18 @@
                                 >
                                   User Discount<sup style="color: #0b1eff96">
                                     (1)</sup
-                                  ><span
+                                  >
+                                  <!-- <span
                                     style="color: #ff0000"
                                     class="float-right"
                                     >(₦{{
                                       annualUserDiscountOnInitialPurchase.toLocaleString()
                                     }})</span
-                                  >
-                                </v-card-text>
-
-                                <v-card-text
-                                  class="text-padding grey lighten-3"
-                                  style="color: #000"
-                                >
-                                  {{ products.length.toLocaleString() }}
-                                  {{ appToAppsText()
-                                  }}<span
-                                    class="float-right"
-                                    style="color: #000"
-                                    >₦{{
-                                      appsValueAnnually.toLocaleString()
-                                    }}</span
-                                  >
-                                </v-card-text>
-
-                                <v-card-text
-                                  v-if="users < 20"
-                                  class="text-padding grey lighten-5"
-                                  style="color: #0b1eff96"
-                                >
-                                  App Discount<span
-                                    class="float-right"
+                                  > -->
+                                  <span
                                     style="color: #ff0000"
-                                    >(₦{{
-                                      appDiscountAnnualCalculator().toLocaleString()
-                                    }})</span
+                                    class="float-right"
+                                    >(₦ XXX)</span
                                   >
                                 </v-card-text>
 
@@ -532,12 +514,18 @@
                                   class="text-padding green lighten-4"
                                   style="color: #ff0000"
                                 >
-                                  Special Discount<span
+                                  Special Discount
+                                  <!-- <span
                                     class="float-right"
                                     style="color: #ff0000"
                                     >(₦{{
                                       specialDiscountAnnualCalculator.toLocaleString()
                                     }})</span
+                                  > -->
+                                  <span
+                                    class="float-right"
+                                    style="color: #ff0000"
+                                    >(₦ XXX)</span
                                   >
                                 </v-card-text>
 
@@ -545,15 +533,15 @@
                                   class="text-padding grey lighten-3"
                                   style="color: #000"
                                 >
-                                  Total / Month<sup> (2)</sup
-                                  ><span class="float-right" style="color: #000"
-                                    ><span
-                                      class="float-right"
-                                      style="color: #000"
-                                      >₦{{
+                                  Total / Month<sup> (2)</sup>
+                                  <!-- <span class="float-right" style="color: #000"
+                                    >
+                                    ₦{{
                                         totalPerMonthAnnualForAnnual.toLocaleString()
                                       }}</span
-                                    ></span
+                                    > -->
+                                  <span class="float-right" style="color: #000">
+                                    ₦ XXX</span
                                   >
                                 </v-card-text>
 
@@ -569,41 +557,52 @@
                                       "
                                     >
                                       <sup>(2)</sup> Billed Annually:
-                                      <span
-                                        ><span
+                                      <!-- <span
                                           style="color: #000; margin-left: 12px"
                                           >₦{{
                                             billedAnnualTimesUser.toLocaleString()
                                           }}</span
                                         ></span
-                                      >
-                                    </span>
+                                      > -->
+                                      <span
+                                        style="color: #000; margin-left: 12px"
+                                        >₦ XXX</span
+                                      ></span
+                                    >
                                   </v-card-text>
 
                                   <v-card-text
                                     class="grey lighten-3 text-padding"
                                     style="color: #000"
                                   >
-                                    VAT<span
-                                      class="float-right"
-                                      style="color: #000"
-                                      ><span
+                                    VAT
+                                    <!-- <span
                                         class="float-right"
                                         style="color: #000"
                                         >₦{{ annualVat.toLocaleString() }}</span
-                                      ></span
+                                      > -->
+                                    <span
+                                      class="float-right"
+                                      style="color: #000"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <v-card-text
                                     class="grey lighten-5 text-padding"
                                     style="color: #000"
                                   >
-                                    Payment Due<span
+                                    Payment Due
+                                    <!-- <span
                                       class="float-right"
                                       style="color: #000; font-weight: 600"
-                                      >₦{{
+                                      >₦ {{
                                         paymentDueAnnual.toLocaleString()
                                       }}</span
+                                    > -->
+                                    <span
+                                      class="float-right"
+                                      style="color: #000; font-weight: 600"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <v-card-text
@@ -616,12 +615,16 @@
                                   >
                                     <span>
                                       <sup style="color: #000">(3) </sup>Total
-                                      Discount (NGN): </span
-                                    ><span
+                                      Discount (NGN):
+                                    </span>
+                                    <!-- <span
                                       style="color: #000; margin-left: 10px"
                                       >₦{{
                                         totalAnnualDiscount.toLocaleString()
                                       }}</span
+                                    > -->
+                                    <span style="color: #000; margin-left: 10px"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <div class="my-2 d-flex justify-center">
@@ -639,7 +642,7 @@
                                   </div>
                                   <div class="my-2 d-flex justify-center">
                                     <v-btn
-                                      to="/confirm-order"
+                                      to="/shopping-process"
                                       class="px-15"
                                       color="success"
                                       dark
@@ -662,14 +665,19 @@
                                   class="text-padding grey lighten-3"
                                   style="color: #000"
                                 >
-                                  {{ users.toLocaleString() }}
-                                  <span style="color: #000">{{
+                                  Users
+                                  <!-- {{ users.toLocaleString() }} -->
+                                  <!-- <span style="color: #000">{{
                                     userToUsersText()
                                   }}</span
-                                  ><span class="float-right" style="color: #000"
+                                  > -->
+                                  <!-- <span class="float-right" style="color: #000"
                                     >₦{{
                                       monthlyTimesUser.toLocaleString()
                                     }}</span
+                                  > -->
+                                  <span class="float-right" style="color: #000"
+                                    >₦ XXX</span
                                   >
                                 </v-card-text>
 
@@ -679,41 +687,18 @@
                                 >
                                   User Discount<sup style="color: #0b1eff96">
                                     (1)</sup
-                                  ><span
+                                  >
+                                  <!-- <span
                                     style="color: #ff0000"
                                     class="float-right"
                                     >(₦{{
                                       monthlyUserDiscountOnInitialPurchase.toLocaleString()
                                     }})</span
-                                  >
-                                </v-card-text>
-
-                                <v-card-text
-                                  class="text-padding grey lighten-3"
-                                  style="color: #000; font-weight: 500"
-                                >
-                                  {{ products.length.toLocaleString() }}
-                                  {{ appToAppsText()
-                                  }}<span
-                                    class="float-right"
-                                    style="color: #000"
-                                    >₦{{
-                                      appsValueMonthly.toLocaleString()
-                                    }}</span
-                                  >
-                                </v-card-text>
-
-                                <v-card-text
-                                  v-if="users < 20"
-                                  class="text-padding grey lighten-5"
-                                  style="color: #0b1eff96"
-                                >
-                                  App Discount<span
-                                    class="float-right"
+                                  > -->
+                                  <span
                                     style="color: #ff0000"
-                                    >(₦{{
-                                      appDiscountMonthlyCalculator().toLocaleString()
-                                    }})</span
+                                    class="float-right"
+                                    >(₦ XXX)</span
                                   >
                                 </v-card-text>
 
@@ -721,12 +706,18 @@
                                   class="text-padding green lighten-4"
                                   style="color: #ff0000"
                                 >
-                                  Special Discount<span
+                                  Special Discount
+                                  <!-- <span
                                     class="float-right"
                                     style="color: #ff0000"
                                     >(₦{{
                                       specialDiscountMonthlyCalculator.toLocaleString()
                                     }})</span
+                                  > -->
+                                  <span
+                                    class="float-right"
+                                    style="color: #ff0000"
+                                    >(₦ XXX)</span
                                   >
                                 </v-card-text>
 
@@ -734,14 +725,16 @@
                                   class="text-padding grey lighten-3"
                                   style="color: #000"
                                 >
-                                  Total / Month<span class="float-right"
-                                    ><span
+                                  Total / Month
+                                  <!-- <span
                                       class="float-right"
                                       style="color: #000"
                                       >₦{{
                                         totalPerMonthAnnualForMonthly.toLocaleString()
                                       }}</span
-                                    ></span
+                                    > -->
+                                  <span class="float-right" style="color: #000"
+                                    >₦ XXX</span
                                   >
                                 </v-card-text>
 
@@ -762,28 +755,36 @@
                                     class="grey lighten-5 text-padding"
                                     style="color: #000"
                                   >
-                                    VAT<span
-                                      class="float-right"
-                                      style="color: #000"
-                                      ><span
+                                    VAT
+                                    <!-- <span
                                         class="float-right"
                                         style="color: #000"
                                         >₦{{
                                           monthlyVat.toLocaleString()
                                         }}</span
-                                      ></span
+                                      > -->
+                                    <span
+                                      class="float-right"
+                                      style="color: #000"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <v-card-text
                                     class="grey lighten-3 text-padding"
                                     style="color: #000"
                                   >
-                                    Payment Due<span
+                                    Payment Due
+                                    <!-- <span
                                       class="float-right"
                                       style="color: #000; font-weight: 600"
                                       >₦{{
                                         paymentDueMonthly.toLocaleString()
                                       }}</span
+                                    > -->
+                                    <span
+                                      class="float-right"
+                                      style="color: #000; font-weight: 600"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <v-card-text
@@ -796,12 +797,16 @@
                                   >
                                     <span>
                                       <sup style="color: #000">(2) </sup>Total
-                                      Discount (NGN): </span
-                                    ><span
+                                      Discount (NGN):
+                                    </span>
+                                    <!-- <span
                                       style="color: #000; margin-left: 10px"
                                       >₦{{
                                         totalMonthlyDiscount.toLocaleString()
                                       }}</span
+                                    > -->
+                                    <span style="color: #000; margin-left: 10px"
+                                      >₦ XXX</span
                                     >
                                   </v-card-text>
                                   <div class="my-2 d-flex justify-center">

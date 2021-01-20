@@ -1,5 +1,11 @@
 <template>
-  <v-form ref="form" lazy-validation class="pa-0" autocomplete>
+  <v-form
+    ref="form"
+    lazy-validation
+    class="pa-0"
+    autocomplete
+    style="background-color: #fff"
+  >
     <h2 align="left" class="create-account mb-2">Create an Account</h2>
     <!-- Sign up component starts here. with multisteps component-->
     <v-row>
@@ -61,31 +67,23 @@
       </v-col>
       <v-col>
         <v-row>
-          <v-col class="-mt-6" cols="6" xs="12" sm="12" md="8" lg="8">
+          <v-col class="-mt-6" cols="6" xs="12" sm="12" md="12" lg="12">
             <p style="font-size: 12px">
-              <!-- <a href="/recover_password" class="txt-primary"
-                                  >Forgot Password ?
-                                </a> -->
               By clicking on Continue, you accept our
-              <span class="term">Terms of service</span>
+              <span class="terms">Terms of service</span>
               and
-              <span class="term">Privacy Policy</span>
+              <span class="terms">Privacy Policy</span>
             </p>
-          </v-col>
-
-          <v-col
-            class="d-flex justify-end"
-            cols="6"
-            xs="12"
-            sm="12"
-            md="4"
-            lg="4"
-          >
+            <p style="font-size: 12px">
+              Already have an account?
+              <span class="terms">Sign in</span>
+            </p>
           </v-col>
         </v-row>
       </v-col>
     </v-row>
   </v-form>
+
   <!-- Sign up component ends here -->
 </template>
 
@@ -104,4 +102,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.terms {
+  color: #16b271;
+}
+</style>
