@@ -76,6 +76,7 @@
             </v-stepper-content>
             <!-- SIGN UP ENDS HERE-->
 
+            <!-- CONFIRM ORDER STARTS HERE-->
             <v-stepper-content step="2">
               <h2 class="mb-1 ml-2">Confirm Order</h2>
               <v-divider class="mb-1"></v-divider>
@@ -92,7 +93,7 @@
                       min-width="30vw"
                       style=""
                     >
-                      <ConfirmOrderCard />
+                      <OrderTotalCard />
                       <div class="text-center">
                         <v-btn color="primary" @click="e1 = 3">
                           Proceed Checkout
@@ -111,18 +112,45 @@
                 </v-col>
               </v-row>
             </v-stepper-content>
+            <!-- CONFIRM ORDER ENDS HERE-->
 
+            <!-- CHECK OUT STARTS HERE-->
             <v-stepper-content step="3">
-              <v-card
-                class="mb-12"
-                color="grey lighten-1"
-                height="200px"
-              ></v-card>
+              <div>
+                <h2 class="mb-1 ml-2">Check Out</h2>
+                <v-divider class="mb-1"></v-divider>
+                <v-row justify="center">
+                  <v-card
+                    elevation="2"
+                    class="mx-auto pa-4 pt-4 mt-4 pb-8 ml-2 mr-2"
+                    width="61vw"
+                    style=""
+                  >
+                    <CheckoutCard />
+                  </v-card>
+                </v-row>
 
-              <div class="text-center">
-                <v-btn color="primary" @click="e1 = 1"> Continue </v-btn>
+                <v-row justify="center" class="mt-8 mb-3">
+                  <v-card
+                    width="61vw"
+                    elevation="2"
+                    class="mx-auto pa-8 pt-8 pb-8 ml-2 mr-2"
+                    style=""
+                  >
+                    <CheckOutPaymentCard />
+                    <div class="text-center">
+                      <v-btn color="success py-4" block @click="e1 = 3">
+                        Yes, I confirm my payment
+                      </v-btn>
+                      <div class="mt-3">
+                        <img src="~assets/paystack.png" style="height: 30px" />
+                      </div>
+                    </div>
+                  </v-card>
+                </v-row>
               </div>
             </v-stepper-content>
+            <!-- CONFIRM ORDER ENDS HERE-->
           </v-stepper-items>
         </v-stepper>
       </v-app>
@@ -133,8 +161,9 @@
 <script>
 import Signup from '.././components/contents/Signup'
 import Accordion from '../components/contents/Accordion.vue'
+import CheckoutCard from '../components/contents/CheckoutCard.vue'
 import ConfirmOrderAccordion from '../components/contents/ConfirmOrderAccordion.vue'
-import ConfirmOrderCard from '../components/contents/ConfirmOrderCard'
+import OrderTotalCard from '../components/contents/OrderTotalCard'
 import Password from '../components/contents/Password.vue'
 import SalesCondition from '../components/contents/SalesCondition.vue'
 import VerificationCode from '../components/contents/VerificationCode.vue'
@@ -145,8 +174,9 @@ export default {
     VerificationCode,
     Password,
     ConfirmOrderAccordion,
-    ConfirmOrderCard,
+    OrderTotalCard,
     SalesCondition,
+    CheckoutCard,
   },
   data() {
     return {
