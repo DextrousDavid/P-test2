@@ -62,7 +62,7 @@
               </p>
               <p style="font-size: 12px">
                 Already have an account?
-                <span class="terms">Sign in</span>
+                <span class="terms">Sign in </span>
               </p>
             </v-col>
           </v-row>
